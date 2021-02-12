@@ -1,0 +1,25 @@
+{
+  "personalInfo": {
+    "name": {
+      "firstName": "Paige",
+      "lastName": "Freeman-Cyopeck"
+    },
+    "aboutMe": "here's lots of content",
+    "imagePath": "/src/assets/asset.jpg"
+  },
+  "projects": [
+    {
+      "title": "project name",
+      "imagePath": "/src/assets/asset.jpg",
+      "description": "lorem lorem lorem",
+      "linkGithub": "google.com",
+      "linkLive": "google.com"
+    }
+  ],
+  "skills": [
+    {
+      "title": "skill name",
+      "imagePath": "google.com"
+    }
+  ]
+}

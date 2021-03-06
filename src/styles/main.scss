@@ -1,6 +1,15 @@
 @import './default';
 @import './config';
+@import './removeDefaults';
 
-* {
-  font-family: $primaryFont;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  padding: 0;
 }

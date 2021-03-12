@@ -1,10 +1,12 @@
 <template>
   <div class="hero">
     <div class="hero__text-container">
-      <h1>
-        {{ firstName }} <span>{{ lastName }}</span>
-      </h1>
-      <h2>Front-end web developer</h2>
+      <div class="hero--heading">
+        <h1>
+          {{ firstName }} <span>{{ lastName }}</span>
+        </h1>
+        <h2>Front-end web developer</h2>
+      </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
       <path
@@ -51,19 +53,21 @@ export default {
     text-align: left;
     padding: 0 10%;
 
+    .hero--heading {
+      margin-top: 20px;
+    }
+
     h1 span {
       display: block;
-      width: 100%;
     }
 
     h1 {
-      font-size: 7.2rem;
-      width: 75%;
+      font-size: clamp(4.2rem, 8vw, 10.2rem);
     }
 
     h2 {
-      font-size: 3.6rem;
-      width: 75%;
+      // font-size: 3.6rem;
+      font-size: clamp(1.6rem, 5vw, 4.2rem);
       font-weight: 300;
     }
   }
@@ -72,4 +76,31 @@ export default {
     margin-top: -1px;
   }
 }
+
+@media (max-width: 320px) // Mobile small (iPhone SE original) and below [very rare now] 
+    {}
+    @media (max-width: 375px) // Mobile (iPhone Regular) and below 
+    {}
+    @media (max-width: 414px) // Mobile large (iPhone Max) and below 
+    {}
+    @media (max-width: 768px) // Tablet and below (most iPads) 
+    {
+      // .hero__text-container {
+
+      //   h1 {
+      //     font-size: 6rem;
+      //   }
+      //   h1 span{
+      //     font-size: 4.8rem;
+      //   }
+      // }
+    }
+    @media (max-width: 1024px) // Tablet Large and below (iPad Pro 12.9-inch) 
+    {}
+    @media (max-width: 1280px) // MacBook Pro 13 inch and below 
+    {}
+    @media (max-width: 1440px) // MacBook Pro 15 inch and below 
+    {}
+    @media (min-width: 1792px) // MacBook Pro 16 inch and above 
+    {}
 </style>

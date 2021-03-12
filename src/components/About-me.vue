@@ -48,13 +48,12 @@ export default {
 
   &__wrapper {
     max-width: 1280px;
-    width: 60%;
     margin: 0 auto;
-    padding: 15% 0 5% 0;
+    padding: 15% 10% 5% 10%;
   }
 
   &__image-container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     img {
       width: 100%;
@@ -63,16 +62,54 @@ export default {
   }
 
   &__text-container {
-    font-family: $primary-font;
-    &--heading {
+    padding: 0 10%;
+
+    .about-me--heading {
+      font-size: clamp(2.4rem, 4vw, 4.6rem);
     }
 
-    &--content {
+    .about-me--content {
+      font-size: clamp(1.4rem, 5vw, 2.8rem);
+      font-family: $secondary-font;
     }
   }
 
   .svg {
     transform: rotate(180deg);
   }
+  @media (max-width: 320px) // Mobile small (iPhone SE original) and below [very rare now] 
+  {}
+  @media (max-width: 375px) // Mobile (iPhone Regular) and below 
+  {}
+  @media (max-width: 414px) // Mobile large (iPhone Max) and below 
+  {
+    .about-me {
+      &__text-container {
+        padding: 0;
+      }
+
+      &__image-container {
+        width: 80%;
+      }
+    }
+  }
+  @media (max-width: 768px) // Tablet and below (most iPads) 
+  {
+    .about-me {
+
+      &__text-container {
+        padding: 0 5%;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (max-width: 1024px) // Tablet Large and below (iPad Pro 12.9-inch) 
+  {}
+  @media (max-width: 1280px) // MacBook Pro 13 inch and below 
+  {}
+  @media (max-width: 1440px) // MacBook Pro 15 inch and below 
+  {}
+  @media (min-width: 1792px) // MacBook Pro 16 inch and above 
+  {}
 }
 </style>

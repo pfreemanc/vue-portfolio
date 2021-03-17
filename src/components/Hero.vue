@@ -78,31 +78,4 @@ export default {
     margin-top: -1px;
   }
 }
-
-@media (max-width: 320px) // Mobile small (iPhone SE original) and below [very rare now] 
-    {}
-    @media (max-width: 375px) // Mobile (iPhone Regular) and below 
-    {}
-    @media (max-width: 414px) // Mobile large (iPhone Max) and below 
-    {}
-    @media (max-width: 768px) // Tablet and below (most iPads) 
-    {
-      // .hero__text-container {
-
-      //   h1 {
-      //     font-size: 6rem;
-      //   }
-      //   h1 span{
-      //     font-size: 4.8rem;
-      //   }
-      // }
-    }
-    @media (max-width: 1024px) // Tablet Large and below (iPad Pro 12.9-inch) 
-    {}
-    @media (max-width: 1280px) // MacBook Pro 13 inch and below 
-    {}
-    @media (max-width: 1440px) // MacBook Pro 15 inch and below 
-    {}
-    @media (min-width: 1792px) // MacBook Pro 16 inch and above 
-    {}
 </style>

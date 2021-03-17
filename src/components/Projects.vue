@@ -1,19 +1,26 @@
 <template>
   <div class="projects">
     <div class="projects__wrapper">
-      <h3>My Work</h3>
-      <ul>
+      <h3 class="projects--heading">My Work</h3>
+      <ul class="projects__container">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
-            <img src="https://via.placeholder.com/450x300" alt="">
+            <img src="https://via.placeholder.com/450x300" alt="" />
           </div>
           <div class="project__text-container">
-            <h4>{{ project.title }}</h4>
-            <h5>{{ project.stack }}</h5>
-            <p>{{ project.content }}</p>
-            <a href="" v-for="(link, index) in project.links" :key="index">
+            <h4 class="project--title">{{ project.title }}</h4>
+            <h5 class="project--stack">
+              <span>Built With: </span>{{ project.stack }}
+            </h5>
+            <p class="project--content">{{ project.content }}</p>
+            <a
+              class="project--links"
+              ref=""
+              v-for="(link, index) in project.links"
+              :key="index"
+            >
               {{ link }}
-            </a> 
+            </a>
           </div>
         </li>
       </ul>
@@ -39,17 +46,21 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/_config.scss";
+
 .projects {
   background-color: #000000;
   color: white;
+  margin-top: -5px;
 
   &__wrapper {
     max-width: 1280px;
-    width: 75%;
     margin: 0 auto;
+    padding: 5% 10%;
 
-    h3 {
+    .projects--heading {
       text-align: center;
+      font-size: clamp(3.6rem, 10vw, 9rem);
     }
   }
 
@@ -59,17 +70,47 @@ export default {
     justify-content: center;
     align-items: center;
 
+    // Tablet and below
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     &__text-container {
-      padding: 0 8%;
+      padding-left: 8%;
       width: calc(50%);
 
-      a {
-        padding-right: 5%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      .project {
+        &--title {
+          margin: 0 0 5px 0;
+          font-size: clamp(2.4rem, 3vw, 4rem);
+        }
+
+        &--stack {
+          margin: unset;
+          margin: 5px 0;
+        }
+
+        &--content {
+          margin: 20px 0;
+          font-family: $secondary-font;
+        }
+
+        &--links {
+          padding-right: 5%;
+        }
       }
     }
 
     &__img-container {
       width: calc(50%);
+
+      @media (max-width: 768px) {
+        width: 80%;
+      }
 
       img {
         width: 100%;

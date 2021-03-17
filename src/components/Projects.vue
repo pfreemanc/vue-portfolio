@@ -2,7 +2,7 @@
   <div class="projects">
     <div class="projects__wrapper">
       <h3 class="projects--heading">My Work</h3>
-      <ul>
+      <ul class="projects__container">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
             <img src="https://via.placeholder.com/450x300" alt="">
@@ -13,7 +13,11 @@
               <span>Built With: </span>{{ project.stack }}
             </h5>
             <p class="project--content">{{ project.content }}</p>
-            <a  class="project--links" href="" v-for="(link, index) in project.links" :key="index">
+            <a 
+              class="project--links" 
+              ref="" 
+              v-for="(link, index) in project.links" :key="index"
+            >
               {{ link }}
             </a> 
           </div>
@@ -41,6 +45,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../styles/_config.scss';
+
 .projects {
   background-color: #000000;
   color: white;
@@ -86,7 +92,13 @@ export default {
         }
 
         &--stack {
-          margin: 0;
+          margin: unset;
+          margin: 5px 0;
+        }
+
+        &--content {
+          margin: 20px 0;
+          font-family: $secondary-font;
         }
 
         &--links {

@@ -63,10 +63,12 @@ export default {
 
     h1 {
       font-size: clamp(4.2rem, 8vw, 10.2rem);
+      margin: 0;
     }
 
     h2 {
       // font-size: 3.6rem;
+      margin: 0;
       font-size: clamp(1.6rem, 5vw, 4.2rem);
       font-weight: 300;
     }

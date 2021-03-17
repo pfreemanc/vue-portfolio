@@ -9,7 +9,9 @@
           </div>
           <div class="project__text-container">
             <h4 class="project--title">{{ project.title }}</h4>
-            <h5 class="project--stack">{{ project.stack }}</h5>
+            <h5 class="project--stack">
+              <span>Built With: </span>{{ project.stack }}
+            </h5>
             <p class="project--content">{{ project.content }}</p>
             <a  class="project--links" href="" v-for="(link, index) in project.links" :key="index">
               {{ link }}
@@ -75,11 +77,16 @@ export default {
         {
           width: 100%;
         }
+
       .project {
 
         &--title {
-          margin: 0 0 10px 0;
+          margin: 0 0 5px 0;
           font-size: clamp(2.4rem, 3vw, 4rem);
+        }
+
+        &--stack {
+          margin: 0;
         }
 
         &--links {

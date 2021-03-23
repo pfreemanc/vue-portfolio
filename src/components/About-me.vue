@@ -1,6 +1,9 @@
 <template>
   <div class="about-me">
     <div class="about-me__wrapper">
+      <div class="about-me__header-container">
+        <h2 class="about-me--heading">About Me</h2>
+      </div>
       <div class="about-me__image-container">
         <img src="../assets/meagain.jpg" alt="" />
       </div>
@@ -45,11 +48,17 @@ export default {
 @import "../styles/_config.scss";
 
 .about-me {
-
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;
     padding: 15% 10% 5% 10%;
+  }
+
+  &__header-container {
+    .about-me--heading {
+      font-size: clamp(2.4rem, 8vw, 8.4rem);
+      text-align: center;
+    }
   }
 
   &__image-container {
@@ -77,12 +86,9 @@ export default {
   .svg {
     transform: rotate(180deg);
   }
-  @media (max-width: 320px) // Mobile small (iPhone SE original) and below [very rare now] 
-  {}
-  @media (max-width: 375px) // Mobile (iPhone Regular) and below 
-  {}
-  @media (max-width: 414px) // Mobile large (iPhone Max) and below 
-  {
+
+  // Mobile Large
+  @media (max-width: 414px) {
     .about-me {
       &__text-container {
         padding: 0;
@@ -93,23 +99,15 @@ export default {
       }
     }
   }
-  @media (max-width: 768px) // Tablet and below (most iPads) 
-  {
-    .about-me {
 
+  // Tablet
+  @media (max-width: 768px) {
+    .about-me {
       &__text-container {
         padding: 0 5%;
         margin: 0 auto;
       }
     }
   }
-  @media (max-width: 1024px) // Tablet Large and below (iPad Pro 12.9-inch) 
-  {}
-  @media (max-width: 1280px) // MacBook Pro 13 inch and below 
-  {}
-  @media (max-width: 1440px) // MacBook Pro 15 inch and below 
-  {}
-  @media (min-width: 1792px) // MacBook Pro 16 inch and above 
-  {}
 }
 </style>

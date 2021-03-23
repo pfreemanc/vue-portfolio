@@ -56,7 +56,7 @@ export default {
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 5% 10%;
+    padding: 5% 0;
 
     .projects--heading {
       text-align: center;
@@ -64,11 +64,24 @@ export default {
     }
   }
 
+  &__container {
+    padding: 0 10%;
+  }
+
   .project {
     padding: 5% 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:nth-of-type(even) {
+      .project__text-container {
+        order: 1;
+      }
+      .project__img-container {
+        order: 2;
+      }
+    }
 
     // Tablet and below
     @media (max-width: 768px) {
@@ -86,21 +99,28 @@ export default {
       .project {
         &--title {
           margin: 0 0 5px 0;
-          font-size: clamp(2.4rem, 3vw, 4rem);
+          font-size: clamp(2.4rem, 5vw, 3.2rem);
+          font-weight: 700;
+          font-family: $secondary-font;
         }
 
         &--stack {
           margin: unset;
           margin: 5px 0;
+          font-weight: 300;
+          font-size: 1.6rem;
         }
 
         &--content {
           margin: 20px 0;
           font-family: $secondary-font;
+          font-size: 2rem;
         }
 
         &--links {
           padding-right: 5%;
+          font-size: 1.8rem;
+          font-weight: 300;
         }
       }
     }

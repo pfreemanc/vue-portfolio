@@ -7,20 +7,19 @@
 </template>
 
 <script>
-import './styles/main.scss'
-import Hero from './components/Hero.vue'
-import AboutMe from './components/About-me.vue'
-import Projects from './components/Projects.vue'
+import "./styles/main.scss";
+import Hero from "./components/Hero.vue";
+import AboutMe from "./components/About-me.vue";
+import Projects from "./components/Projects.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Hero,
     AboutMe,
     Projects
   }
-}
+};
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

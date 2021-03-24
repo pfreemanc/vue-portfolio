@@ -56,14 +56,17 @@ export default {
 
   &__header-container {
     .about-me--heading {
-      font-size: clamp(2.4rem, 8vw, 8.4rem);
+      font-size: clamp(4.8rem, 8vw, 8.4rem);
       text-align: center;
+      margin: 0;
+      margin-bottom: 40px;
     }
   }
 
   &__image-container {
     width: 50%;
     margin: 0 auto;
+
     img {
       width: 100%;
       border-radius: 50%;
@@ -87,6 +90,15 @@ export default {
     transform: rotate(180deg);
   }
 
+  // Tablet
+  @media (max-width: 768px) {
+    .about-me {
+      &__text-container {
+        padding: 0 5%;
+        margin: 0 auto;
+      }
+    }
+  }
   // Mobile Large
   @media (max-width: 414px) {
     .about-me {
@@ -95,17 +107,7 @@ export default {
       }
 
       &__image-container {
-        width: 80%;
-      }
-    }
-  }
-
-  // Tablet
-  @media (max-width: 768px) {
-    .about-me {
-      &__text-container {
-        padding: 0 5%;
-        margin: 0 auto;
+        width: 85%;
       }
     }
   }

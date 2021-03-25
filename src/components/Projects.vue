@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     <div class="projects__wrapper">
-      <h3 class="projects--heading">My Work</h3>
+      <h3 class="projects--heading">Projects</h3>
       <ul class="projects__container">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
@@ -61,11 +61,14 @@ export default {
     .projects--heading {
       text-align: center;
       font-size: clamp(3.6rem, 10vw, 9rem);
+      margin: 0;
+      margin-bottom: 50px;
     }
   }
 
   &__container {
     padding: 0 10%;
+    margin: 0;
   }
 
   .project {
@@ -74,33 +77,24 @@ export default {
     justify-content: center;
     align-items: center;
 
-    &:nth-of-type(even) {
-      .project__text-container {
-        order: 1;
-      }
-      .project__img-container {
-        order: 2;
-      }
-    }
-
     // Tablet and below
     @media (max-width: 768px) {
       flex-direction: column;
     }
 
     &__text-container {
-      padding-left: 8%;
-      width: calc(50%);
+      margin-left: auto;
+      width: calc(45%);
 
+      // Tablet and below
       @media (max-width: 768px) {
-        width: 100%;
+        margin-top: 20px;
       }
-
       .project {
         &--title {
           margin: 0 0 5px 0;
           font-size: clamp(2.4rem, 5vw, 3.2rem);
-          font-weight: 700;
+          font-weight: 500;
           font-family: $secondary-font;
         }
 
@@ -108,13 +102,13 @@ export default {
           margin: unset;
           margin: 5px 0;
           font-weight: 300;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
         }
 
         &--content {
-          margin: 20px 0;
+          margin: 5px 0 10px 0;
           font-family: $secondary-font;
-          font-size: 2rem;
+          font-size: clamp(1.6rem, 5vw, 2rem);
         }
 
         &--links {
@@ -128,15 +122,42 @@ export default {
     &__img-container {
       width: calc(50%);
 
+      // Tablet and below
       @media (max-width: 768px) {
-        width: 80%;
+        width: 100%;
       }
 
       img {
         width: 100%;
         height: 100%;
+        border-radius: 20px;
       }
     }
   }
+}
+
+// Mobile small
+@media (max-width: 320px) {
+}
+// Mobile
+@media (max-width: 375px) {
+}
+// Mobile large
+@media (max-width: 414px) {
+}
+// Tablet and below
+@media (max-width: 768px) {
+}
+// Tablet Large
+@media (max-width: 1024px) {
+}
+// MacBook Pro 13 inch
+@media (max-width: 1280px) {
+}
+// MacBook Pro 15 inch
+@media (max-width: 1440px) {
+}
+// MacBook Pro 16 inch
+@media (min-width: 1792px) {
 }
 </style>

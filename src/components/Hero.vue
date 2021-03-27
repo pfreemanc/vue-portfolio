@@ -59,18 +59,21 @@ export default {
 
     h1 span {
       display: block;
+      font-size: clamp(2.8rem, 8vw, 9.6rem);
     }
 
     h1 {
-      font-size: clamp(4.2rem, 8vw, 10.2rem);
+      font-size: clamp(3.8rem, 8vw, 9.6rem);
       margin: 0;
+      font-weight: 500;
     }
 
     h2 {
-      // font-size: 3.6rem;
       margin: 0;
-      font-size: clamp(1.6rem, 5vw, 4.2rem);
+      font-size: clamp(1.6rem, 2vw, 4.2rem);
       font-weight: 300;
+      text-transform: lowercase;
+      margin-left: 1px;
     }
   }
 

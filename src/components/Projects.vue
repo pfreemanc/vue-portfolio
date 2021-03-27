@@ -69,8 +69,13 @@ export default {
   }
 
   &__container {
-    padding: 0 10%;
+    padding: 0 15%;
     margin: 0;
+
+    // Mobile large
+    @media (max-width: 414px) {
+      padding: 0 10%;
+    }
   }
 
   .project {

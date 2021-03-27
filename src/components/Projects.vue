@@ -13,11 +13,13 @@
               <span>Built With: </span>{{ project.stack }}
             </h5>
             <p class="project--content">{{ project.content }}</p>
+            <hr class="project__line">
             <a
               class="project--links"
               ref=""
               v-for="(link, index) in project.links"
               :key="index"
+              :href="link"
             >
               {{ link }}
             </a>
@@ -80,6 +82,7 @@ export default {
     // Tablet and below
     @media (max-width: 768px) {
       flex-direction: column;
+      padding: 50px 0;
     }
 
     &__text-container {
@@ -89,8 +92,10 @@ export default {
       // Tablet and below
       @media (max-width: 768px) {
         margin-top: 20px;
+        width: 100%;
       }
-      .project {
+
+      .project { 
         &--title {
           margin: 0 0 5px 0;
           font-size: clamp(2.4rem, 5vw, 3.2rem);
@@ -111,10 +116,15 @@ export default {
           font-size: clamp(1.6rem, 5vw, 2rem);
         }
 
+        &__line {
+          margin-bottom: 10px;
+        }
+
         &--links {
           padding-right: 5%;
           font-size: 1.8rem;
           font-weight: 300;
+          color: $white;
         }
       }
     }
@@ -124,7 +134,7 @@ export default {
 
       // Tablet and below
       @media (max-width: 768px) {
-        width: 100%;
+        width: 90%;
       }
 
       img {

@@ -12,7 +12,7 @@
           v-for="(link, index) in links" 
           :key="index"
         >
-          <i class="fab fa-twitter"></i>
+          <font-awesome-icon :icon="['fab', 'twitter']" />
         </li>
       </ul>
     </div>

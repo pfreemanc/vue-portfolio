@@ -1,89 +1,89 @@
 {
-  "personalInfo" : {
-    "about" : {
-      "heading" : " I'm Paige, and I'm a front-end web developer based out of Toronto!",
-      "content" : "Taking advantage of my background in Object Oriented Programming I’ve been taking the time to cultivate my skills in front-end development to round out my expertise as a web developer. With a passion for clean and concise code I prioritize usability and accessibility in my applications. When not working and honing my ever-growing list of skills in web development you can find me playing games, working on music, or spending time with my dog Zelda."
+  "personalInfo": {
+    "about": {
+      "heading": " I'm Paige, and I'm a front-end web developer based out of Toronto!",
+      "content": "Taking advantage of my background in Object Oriented Programming I’ve been taking the time to cultivate my skills in front-end development to round out my expertise as a web developer. With a passion for clean and concise code I prioritize usability and accessibility in my applications. When not working and honing my ever-growing list of skills in web development you can find me playing games, working on music, or spending time with my dog Zelda."
     },
-    "firstName" : "Paige",
-    "lastName" : "Freeman-Cyopeck"
+    "firstName": "Paige",
+    "lastName": "Freeman-Cyopeck"
   },
-  "projects" : {
-    "project1" : {
-      "content" : "The experience of walking through a movie hallway and taking time to view all the posters brought to life in a digital format. Take a nostalgic trip through decades past of movie releases and find your next movie to watch.",
-      "links" : {
-        "githubLink" : "github.com",
-        "liveLink" : "google.com"
+  "projects": {
+    "project1": {
+      "content": "The experience of walking through a movie hallway and taking time to view all the posters brought to life in a digital format. Take a nostalgic trip through decades past of movie releases and find your next movie to watch.",
+      "links": {
+        "githubLink": "github.com",
+        "liveLink": "google.com"
       },
-      "stack" : "React | RESTful API | CSS3",
-      "title" : "Theater Experience"
+      "stack": "React | RESTful API | CSS3",
+      "title": "Theater Experience"
     },
-    "project2" : {
-      "content" : "Collaborative client design driven prototype for a navigable podcatcher. Find podcasts based on topic and listening length and build your own podcast playlists catered to your interests!",
-      "links" : {
-        "githubLink" : "github.com",
-        "liveLink" : "google.com"
+    "project2": {
+      "content": "Collaborative client design driven prototype for a navigable podcatcher. Find podcasts based on topic and listening length and build your own podcast playlists catered to your interests!",
+      "links": {
+        "githubLink": "github.com",
+        "liveLink": "google.com"
       },
-      "stack" : "React | Firebase | CSS3 | RESTful API",
-      "title" : "Podcast Planner"
+      "stack": "React | Firebase | CSS3 | RESTful API",
+      "title": "Podcast Planner"
     },
-    "project3" : {
-      "content" : "Paired programming collaborative prototype with Sarah Duong. Using the Pokémon API to provide a tool for players to find information on their favourite Pokémon and their corresponding Pokédex entry!",
-      "links" : {
-        "githubLink" : "github.com",
-        "liveLink" : "google.com"
+    "project3": {
+      "content": "Paired programming collaborative prototype with Sarah Duong. Using the Pokémon API to provide a tool for players to find information on their favourite Pokémon and their corresponding Pokédex entry!",
+      "links": {
+        "githubLink": "github.com",
+        "liveLink": "google.com"
       },
-      "stack" : "jQuery | JavaScript | RESTful API | SASS | HTML5",
-      "title" : "Pokémon Generator"
+      "stack": "jQuery | JavaScript | RESTful API | SASS | HTML5",
+      "title": "Pokémon Generator"
     }
   },
-  "skills" : {
-    "skill" : {
-      "imgSrc" : "place.it",
-      "title" : "HTML5"
+  "skills": {
+    "skill": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "HTML5"
     },
-    "skill1" : {
-      "imgSrc" : "place.it",
-      "title" : "CSS3"
+    "skill1": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "CSS3"
     },
-    "skill2" : {
-      "imgSrc" : "place.it",
-      "title" : "JavaScript"
+    "skill2": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "JavaScript"
     },
-    "skill3" : {
-      "imgSrc" : "place.it",
-      "title" : "React"
+    "skill3": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "React"
     },
-    "skill4" : {
-      "imgSrc" : "place.it",
-      "title" : "Sass"
+    "skill4": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "Sass"
     },
-    "skill5" : {
-      "imgSrc" : "place.it",
-      "title" : "jQuery"
+    "skill5": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "jQuery"
     },
-    "skill6" : {
-      "imgSrc" : "place.it",
-      "title" : "GitHub"
+    "skill6": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "GitHub"
     },
-    "skill7" : {
-      "imgSrc" : "place.it",
-      "title" : "Slack"
+    "skill7": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "Slack"
     },
-    "skill8" : {
-      "imgSrc" : "place.it",
-      "title" : "Trello"
+    "skill8": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "Trello"
     },
-    "skill9" : {
-      "imgSrc" : "place.it",
-      "title" : "Git"
+    "skill9": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "Git"
     },
-    "skill10" : {
-      "imgSrc" : "place.it",
-      "title" : "GitLab"
+    "skill10": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "GitLab"
     },
-    "skill11" : {
-      "imgSrc" : "place.it",
-      "title" : "Responsive Design"
+    "skill11": {
+      "imgSrc": "https://placehold.it/200x200",
+      "title": "Responsive Design"
     }
   }
 }

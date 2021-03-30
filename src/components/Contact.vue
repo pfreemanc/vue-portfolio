@@ -9,9 +9,10 @@
       </div>
       <ul class="contact__link-container">
         <li
-          v-for="(item, index) in items" :key="index"
+          v-for="(link, index) in links" 
+          :key="index"
         >
-
+          <i class="fab fa-twitter"></i>
         </li>
       </ul>
     </div>
@@ -29,6 +30,7 @@ import db from '../../db.json'
     },
     mounted() {
       console.log(db.personalInfo.links);
+      this.links = db.personalInfo.links
     },
   }
 </script>

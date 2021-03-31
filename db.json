@@ -38,51 +38,51 @@
   },
   "skills": {
     "skill": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "HTML5"
     },
     "skill1": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "CSS3"
     },
     "skill2": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "JavaScript"
     },
     "skill3": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "React"
     },
     "skill4": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Sass"
     },
     "skill5": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "jQuery"
     },
     "skill6": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "GitHub"
     },
     "skill7": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Slack"
     },
     "skill8": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Trello"
     },
     "skill9": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Git"
     },
     "skill10": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "GitLab"
     },
     "skill11": {
-      "imgSrc": "https://placehold.it/200x200",
+      "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Responsive Design"
     }
   }

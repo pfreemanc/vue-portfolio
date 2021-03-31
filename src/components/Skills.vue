@@ -56,13 +56,28 @@ import db from "../../db.json";
   }
 
   &__container {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0 30px;
+    // display: flex;
+    // flex-flow: row wrap;
+    // justify-content: center;
+    // align-items: center;
+    // margin: 0 auto;
+
+    // grid alternative
+    display: grid;
+    padding: 0 10%;
+    width: 85%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  
+
+    // Tablet and below
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
 
     .skill {
       list-style-type: none;
-      width: 33%;
+      // width: calc(33% - 10px);
       padding: 10px;
 
       &__image-container {
@@ -76,5 +91,30 @@ import db from "../../db.json";
       }
     }
   }
+}
+
+// Mobile small
+@media (max-width: 320px) {
+}
+// Mobile
+@media (max-width: 375px) {
+}
+// Mobile large
+@media (max-width: 414px) {
+}
+// Tablet and below
+@media (max-width: 768px) {
+}
+// Tablet Large
+@media (max-width: 1024px) {
+}
+// MacBook Pro 13 inch
+@media (max-width: 1280px) {
+}
+// MacBook Pro 15 inch
+@media (max-width: 1440px) {
+}
+// MacBook Pro 16 inch
+@media (min-width: 1792px) {
 }
 </style>

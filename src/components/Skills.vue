@@ -53,6 +53,10 @@ import db from "../../db.json";
 
   &__heading-container {
     text-align: center;
+
+    .skills--heading {
+      font-size: clamp(4.8rem, 8vw, 8.4rem);
+    }
   }
 
   &__container {

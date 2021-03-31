@@ -9,13 +9,18 @@
     "links": [
       {
         "link": "https://twitter.com/littledogfriend",
-        "label": "Link to my twitter",
+        "altText": "Link to my twitter",
         "iconClass": "twitter"
       },
       {
         "link": "https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/",
-        "label": "Link to my LinkedIn profile",
+        "altText": "Link to my LinkedIn profile",
         "iconClass": "linkedin"
+      },
+      {
+        "link": "https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/",
+        "altText": "Link to my GitHub profile",
+        "iconClass": "github"
       }
     ]
   },

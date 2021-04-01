@@ -4,16 +4,18 @@
       <div class="about-me__header-container">
         <h2 class="about-me--heading">About Me</h2>
       </div>
-      <div class="about-me__image-container">
-        <img src="../assets/meagain.jpg" alt="" />
-      </div>
-      <div class="about-me__text-container">
-        <h3 class="about-me--heading">
-          {{ heading }}
-        </h3>
-        <p class="about-me--content">
-          {{ content }}
-        </p>
+      <div class="about-me__content">
+        <div class="about-me__image-container">
+          <img src="../assets/meagain.jpg" alt="" />
+        </div>
+        <div class="about-me__text-container">
+          <h3 class="about-me--heading">
+            {{ heading }}
+          </h3>
+          <p class="about-me--content">
+            {{ content }}
+          </p>
+        </div>
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
@@ -52,7 +54,7 @@ export default {
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 15% 10% 5% 10%;
+    padding: 15% 5% 5% 5%;
   }
 
   &__header-container {
@@ -60,12 +62,19 @@ export default {
       font-size: clamp(4.8rem, 8vw, 8.4rem);
       text-align: center;
       margin: 0;
-      margin-bottom: 40px;
+      margin-bottom: 75px;
     }
   }
 
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
   &__image-container {
-    width: 50%;
+    width: 35%;
     margin: 0 auto;
 
     img {
@@ -75,10 +84,12 @@ export default {
   }
 
   &__text-container {
-    padding: 0 10%;
+    padding-left: 10%;
+    width: 65%;
 
     .about-me--heading {
       font-size: clamp(2.4rem, 4vw, 4.6rem);
+      margin-bottom: 30px;
     }
 
     .about-me--content {

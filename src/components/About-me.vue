@@ -70,12 +70,22 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 0 auto;
+    padding: 0 5%;
+
+    // Tablet and below
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__image-container {
     width: 35%;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 75%;
+    }
 
     img {
       width: 100%;
@@ -87,9 +97,18 @@ export default {
     padding-left: 10%;
     width: 65%;
 
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-left: 0;
+    }
+
     .about-me--heading {
       font-size: clamp(2.4rem, 4vw, 4.6rem);
       margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        margin-top: 30px;
+      }
     }
 
     .about-me--content {
@@ -123,5 +142,30 @@ export default {
       }
     }
   }
+}
+
+// Mobile small
+@media (max-width: 320px) {
+}
+// Mobile
+@media (max-width: 375px) {
+}
+// Mobile large
+@media (max-width: 414px) {
+}
+// Tablet and below
+@media (max-width: 768px) {
+}
+// Tablet Large
+@media (max-width: 1024px) {
+}
+// MacBook Pro 13 inch
+@media (max-width: 1280px) {
+}
+// MacBook Pro 15 inch
+@media (max-width: 1440px) {
+}
+// MacBook Pro 16 inch
+@media (min-width: 1792px) {
 }
 </style>

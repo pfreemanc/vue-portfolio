@@ -2,18 +2,12 @@
   <div class="skills">
     <div class="skills__wrapper">
       <div class="skills__heading-container">
-        <h2 class="skills--heading">
-          Skills
-        </h2>
+        <h2 class="skills--heading">Skills</h2>
       </div>
       <ul class="skills__container">
-        <li
-          v-for="(skill, index) in skills"
-          :key="index"
-          class="skill"
-        >
+        <li v-for="(skill, index) in skills" :key="index" class="skill">
           <div class="skill__image-container">
-            <img :src="skill.imgSrc" alt="">
+            <img :src="skill.imgSrc" alt="" />
           </div>
         </li>
       </ul>
@@ -31,21 +25,20 @@
 <script>
 import db from "../../db.json";
 
-  export default {
-    data() {
-      return {
-        skills: []
-      }
-    },
-    mounted() {
-      this.skills = db.skills;
-    }
-  }
+export default {
+  data() {
+    return {
+      skills: [],
+    };
+  },
+  mounted() {
+    this.skills = db.skills;
+  },
+};
 </script>
 
 <style lang="scss">
 .skills {
-
   svg {
     transform: rotate(180deg);
     margin-bottom: -5px;
@@ -72,7 +65,7 @@ import db from "../../db.json";
     width: 85%;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;  
+    gap: 20px;
 
     // Tablet and below
     @media (max-width: 768px) {

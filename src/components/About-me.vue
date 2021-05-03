@@ -35,14 +35,14 @@ export default {
   data() {
     return {
       content: "",
-      heading: ""
+      heading: "",
     };
   },
   async created() {
     const aboutMe = await db.personalInfo.about;
     this.content = aboutMe.content;
     this.heading = aboutMe.heading;
-  }
+  },
 };
 </script>
 
@@ -50,7 +50,6 @@ export default {
 @import "../styles/_config.scss";
 
 .about-me {
-
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;

@@ -19,23 +19,23 @@
 </template>
 
 <script>
-import db from "../../db.json";
+import db from '../../db.json'
 
 export default {
   data() {
     return {
       firstName: db.personalInfo.firstName,
-      lastName: db.personalInfo.lastName
-    };
+      lastName: db.personalInfo.lastName,
+    }
   },
   async created() {
-    console.log(db);
-  }
-};
+    console.log(db)
+  },
+}
 </script>
 
 <style lang="scss">
-@import "../styles/config.scss";
+@import '../styles/config.scss';
 
 .hero {
   background-color: black;

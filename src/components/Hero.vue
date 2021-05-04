@@ -8,7 +8,11 @@
         <h2>Front-end web developer</h2>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      class="svg svg--white"
+    >
       <path
         fill="#000000"
         fill-opacity="1"
@@ -78,7 +82,7 @@ export default {
   }
 
   svg {
-    margin-top: -1px;
+    margin-top: -5px;
   }
 }
 </style>

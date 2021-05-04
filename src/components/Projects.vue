@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     <div class="projects__wrapper">
-      <h3 class="projects--heading">Projects</h3>
+      <h3 class="projects--heading section--heading">Projects</h3>
       <ul class="projects__container">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
@@ -31,7 +31,7 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        class="svg"
+        class="svg svg--black"
       >
         <path
           fill="#000000"
@@ -64,17 +64,17 @@ export default {
 @import '../styles/_config.scss';
 
 .projects {
-  svg {
-    background-color: white;
-    margin-bottom: -5px;
-    width: 101%;
-    position: relative;
-    left: -1px;
-  }
+  // svg {
+  //   background-color: white;
+  //   margin-bottom: -5px;
+  //   width: 101%;
+  //   position: relative;
+  //   left: -1px;
+  // }
 
-  .svg--container {
-    overflow: hidden;
-  }
+  // .svg--container {
+  //   overflow: hidden;
+  // }
 
   background-color: #000000;
   color: white;
@@ -87,9 +87,9 @@ export default {
 
     .projects--heading {
       text-align: center;
-      font-size: clamp(3.6rem, 10vw, 9rem);
+      // font-size: clamp(3.6rem, 10vw, 9rem);
       margin: 0;
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
     }
   }
 

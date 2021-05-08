@@ -1,6 +1,6 @@
 <template>
   <div class="about-me">
-    <div class="about-me__wrapper">
+    <div class="about-me__wrapper wrapper">
       <div class="about-me__header-container">
         <h2 class="about-me--heading section--heading">About Me</h2>
       </div>
@@ -50,12 +50,6 @@ export default {
 @import '../styles/_config.scss';
 
 .about-me {
-  &__wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 5% 0;
-  }
-
   &__header-container {
     .about-me--heading {
       text-align: center;

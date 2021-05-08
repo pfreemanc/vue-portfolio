@@ -1,17 +1,19 @@
 <template>
   <div class="hero">
-    <div class="hero__text-container">
-      <div class="hero--heading">
-        <h1>
-          {{ firstName }} <span>{{ lastName }}</span>
-        </h1>
-        <h2>Front-end web developer</h2>
+    <div class="hero__wrapper">
+      <div class="hero__text-container">
+        <div class="hero--heading">
+          <h1>
+            {{ firstName }} <span>{{ lastName }}</span>
+          </h1>
+          <h2>Front-end web developer</h2>
+        </div>
       </div>
     </div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      class="svg svg--white"
+      class="svg svg--black"
     >
       <path
         fill="#000000"
@@ -43,19 +45,18 @@ export default {
 
 .hero {
   background-color: black;
-  height: 80vh;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 
   &__text-container {
-    height: 80vh;
     display: flex;
+    height: 80vh;
     flex-flow: column nowrap;
     font-family: $secondary-font;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: left;
-    padding: 0 10%;
+    // padding: 0 10%;
 
     .hero--heading {
       margin-top: 20px;
@@ -81,8 +82,8 @@ export default {
     }
   }
 
-  svg {
-    margin-top: -5px;
-  }
+  // svg {
+  //   margin-top: -5px;
+  // }
 }
 </style>

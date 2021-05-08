@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <div class="skills__wrapper">
+    <div class="skills__wrapper wrapper">
       <div class="skills__heading-container">
         <h2 class="skills--heading">Skills</h2>
       </div>

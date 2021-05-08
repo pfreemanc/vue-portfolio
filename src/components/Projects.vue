@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <div class="projects__wrapper">
+    <div class="projects__wrapper wrapper">
       <h3 class="projects--heading section--heading">Projects</h3>
       <ul class="projects__container">
         <li class="project" v-for="(project, index) in projects" :key="index">
@@ -64,33 +64,13 @@ export default {
 @import '../styles/_config.scss';
 
 .projects {
-  // svg {
-  //   background-color: white;
-  //   margin-bottom: -5px;
-  //   width: 101%;
-  //   position: relative;
-  //   left: -1px;
-  // }
-
-  // .svg--container {
-  //   overflow: hidden;
-  // }
-
   background-color: #000000;
   color: white;
   margin-top: -5px;
 
-  &__wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 5% 0;
-
-    .projects--heading {
-      text-align: center;
-      // font-size: clamp(3.6rem, 10vw, 9rem);
-      margin: 0;
-      // margin-bottom: 50px;
-    }
+  .projects--heading {
+    text-align: center;
+    margin: 0;
   }
 
   &__container {

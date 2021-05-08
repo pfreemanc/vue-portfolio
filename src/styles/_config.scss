@@ -7,3 +7,10 @@ $secondary-font: 'Rubik', sans-serif;
 // Colours
 $black: #000000;
 $white: #ffffff;
+
+// Headings
+.section--heading {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: clamp(5rem, 10vw, 9rem);
+}

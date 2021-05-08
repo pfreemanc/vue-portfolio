@@ -12,7 +12,7 @@ import "./styles/main.scss";
 import Hero from "./components/Hero.vue";
 import AboutMe from "./components/About-me.vue";
 import Projects from "./components/Projects.vue";
-import Skills from './components/Skills.vue'
+import Skills from "./components/Skills.vue";
 
 export default {
   name: "App",
@@ -20,8 +20,8 @@ export default {
     Hero,
     AboutMe,
     Projects,
-    Skills
-  }
+    Skills,
+  },
 };
 </script>
 

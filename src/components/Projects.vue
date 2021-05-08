@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
-    <div class="projects__wrapper">
-      <h3 class="projects--heading">Projects</h3>
+    <div class="projects__wrapper wrapper">
+      <h3 class="projects--heading section--heading">Projects</h3>
       <ul class="projects__container">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
@@ -13,7 +13,7 @@
               <span>Built With: </span>{{ project.stack }}
             </h5>
             <p class="project--content">{{ project.content }}</p>
-            <hr class="project__line">
+            <hr class="project__line" />
             <a
               class="project--links"
               ref=""
@@ -27,58 +27,50 @@
         </li>
       </ul>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
-      <path
-        fill="#000000"
-        fill-opacity="1"
-        d="M0,128L80,154.7C160,181,320,235,480,218.7C640,203,800,117,960,106.7C1120,96,1280,160,1360,192L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-      ></path>
-    </svg>
+    <div class="svg--container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="svg svg--black"
+      >
+        <path
+          fill="#000000"
+          fill-opacity="1"
+          d="M0,128L80,154.7C160,181,320,235,480,218.7C640,203,800,117,960,106.7C1120,96,1280,160,1360,192L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
   </div>
 </template>
 
 <script>
-import db from "../../db.json";
+import db from '../../db.json'
 
 export default {
   data() {
     return {
-      projects: []
-    };
+      projects: [],
+    }
   },
   async created() {
-    const projects = db.projects;
+    const projects = db.projects
 
-    this.projects = projects;
-  }
-};
+    this.projects = projects
+  },
+}
 </script>
 
 <style lang="scss">
-@import "../styles/_config.scss";
+@import '../styles/_config.scss';
 
 .projects {
-  
-    svg {
-     background-color: white;
-     margin-bottom: -5px;
-    }
-
   background-color: #000000;
   color: white;
   margin-top: -5px;
 
-  &__wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 5% 0;
-
-    .projects--heading {
-      text-align: center;
-      font-size: clamp(3.6rem, 10vw, 9rem);
-      margin: 0;
-      margin-bottom: 50px;
-    }
+  .projects--heading {
+    text-align: center;
+    margin: 0;
   }
 
   &__container {
@@ -113,7 +105,7 @@ export default {
         width: 100%;
       }
 
-      .project { 
+      .project {
         &--title {
           margin: 0 0 5px 0;
           font-size: clamp(2.4rem, 5vw, 3.2rem);

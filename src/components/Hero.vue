@@ -45,7 +45,6 @@ export default {
 
 .hero {
   background-color: black;
-  // margin-bottom: 100px;
 
   &__text-container {
     display: flex;

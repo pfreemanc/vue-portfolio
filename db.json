@@ -2,10 +2,32 @@
   "personalInfo": {
     "about": {
       "heading": " I'm Paige, and I'm a front-end web developer based out of Toronto!",
-      "content": "Taking advantage of my background in Object Oriented Programming I’ve been taking the time to cultivate my skills in front-end development to round out my expertise as a web developer. With a passion for clean and concise code I prioritize usability and accessibility in my applications. When not working and honing my ever-growing list of skills in web development you can find me playing games, working on music, or spending time with my dog Zelda."
+      "content": "Taking advantage of my background in Object Oriented Programming I’ve been taking the time to cultivate my skills in front-end development to round out my expertise as a web developer. With a passion for clean and concise code I prioritize usability and accessibility in my applications. When not working and honing my ever-growing list of skills in web development you can find me playing games, working on music, or spending time with my dog."
     },
     "firstName": "Paige",
-    "lastName": "Freeman-Cyopeck"
+    "lastName": "Freeman-Cyopeck",
+    "contact": [
+      {
+        "link": "https://twitter.com/littledogfriend",
+        "faIconString": "fab fa-twitter",
+        "description": "Twitter"
+      },
+      {
+        "link": "https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/",
+        "faIconString": "fab fa-linkedin-in",
+        "description": "Linked In"
+      },
+      {
+        "link": "https://github.com/pfreemanc",
+        "faIconString": "fab fa-github",
+        "description": "Github"
+      },
+      {
+        "link": "pfreemanc@gmail.com",
+        "faIconString": "fas fa-envelope",
+        "description": "Mail"
+      }
+    ]
   },
   "projects": {
     "project1": {

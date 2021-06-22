@@ -132,29 +132,4 @@ export default {
     }
   }
 }
-
-// Mobile small
-@media (max-width: 320px) {
-}
-// Mobile
-@media (max-width: 375px) {
-}
-// Mobile large
-@media (max-width: 414px) {
-}
-// Tablet and below
-@media (max-width: 768px) {
-}
-// Tablet Large
-@media (max-width: 1024px) {
-}
-// MacBook Pro 13 inch
-@media (max-width: 1280px) {
-}
-// MacBook Pro 15 inch
-@media (max-width: 1440px) {
-}
-// MacBook Pro 16 inch
-@media (min-width: 1792px) {
-}
 </style>

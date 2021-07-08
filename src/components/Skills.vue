@@ -2,9 +2,9 @@
   <div class="skills">
     <div class="skills__wrapper wrapper">
       <div class="skills__heading-container">
-        <h2 class="skills--heading">Skills</h2>
+        <h2 class="skills--heading section--heading">Skills</h2>
       </div>
-      <ul class="skills__container">
+      <ul class="skills__container container">
         <li v-for="(skill, index) in skills" :key="index" class="skill">
           <div class="skill__image-container">
             <img :src="skill.imgSrc" alt="" />
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import db from '../../db.json'
+import db from "../../db.json"
 
 export default {
   data() {
@@ -51,6 +51,7 @@ export default {
 
   &__heading-container {
     text-align: center;
+    position: relative;
 
     .skills--heading {
       font-size: clamp(4.8rem, 8vw, 8.4rem);
@@ -58,16 +59,10 @@ export default {
   }
 
   &__container {
-    // display: flex;
-    // flex-flow: row wrap;
-    // justify-content: center;
-    // align-items: center;
-    // margin: 0 auto;
-
     // grid alternative
     display: grid;
-    padding: 0 10%;
-    width: 85%;
+    // padding: 0 10%;
+    // width: 85%;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

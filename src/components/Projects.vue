@@ -1,8 +1,10 @@
 <template>
   <div class="projects">
     <div class="projects__wrapper wrapper">
-      <h3 class="projects--heading section--heading">Projects</h3>
-      <ul class="projects__container">
+      <div class="projects__heading-container">
+        <h3 class="projects--heading section--heading">Projects</h3>
+      </div>
+      <ul class="projects__container container">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
             <img src="https://via.placeholder.com/450x300" alt="" />
@@ -44,7 +46,7 @@
 </template>
 
 <script>
-import db from '../../db.json'
+import db from "../../db.json"
 
 export default {
   data() {
@@ -61,25 +63,33 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/_config.scss';
+@import "../styles/_config.scss";
 
 .projects {
   background-color: #000000;
   color: white;
   margin-top: -5px;
 
-  .projects--heading {
-    text-align: center;
-    margin: 0;
+  &__heading-container {
+    position: relative;
+
+    .projects--heading {
+      text-align: center;
+      margin: 0;
+    }
+
+    .section--heading::before {
+      background-color: white;
+    }
   }
 
   &__container {
-    padding: 0 15%;
+    // padding: 0 15%;
     margin: 0;
 
     // Mobile large
     @media (max-width: 414px) {
-      padding: 0 10%;
+      // padding: 0 10%;
     }
   }
 

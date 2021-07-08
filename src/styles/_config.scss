@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap");
 
 // Fonts
-$primary-font: 'Karla', sans-serif;
-$secondary-font: 'Rubik', sans-serif;
+$primary-font: "Karla", sans-serif;
+$secondary-font: "Rubik", sans-serif;
 
 // Colours
 $black: #000000;
@@ -13,4 +13,16 @@ $white: #ffffff;
   margin: 0;
   margin-bottom: 50px;
   font-size: clamp(5rem, 10vw, 9rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    width: 100px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
 }

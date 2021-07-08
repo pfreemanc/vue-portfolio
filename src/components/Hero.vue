@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <div class="hero__wrapper">
+    <div class="hero__wrapper wrapper">
       <div class="hero__text-container">
         <div class="hero--heading">
           <h1>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import db from '../../db.json'
+import db from "../../db.json"
 
 export default {
   data() {
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/config.scss';
+@import "../styles/config.scss";
 
 .hero {
   background-color: black;

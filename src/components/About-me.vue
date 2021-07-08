@@ -4,7 +4,7 @@
       <div class="about-me__header-container">
         <h2 class="about-me--heading section--heading">About Me</h2>
       </div>
-      <div class="about-me__content">
+      <div class="about-me__content container">
         <div class="about-me__image-container">
           <img src="../assets/meagain.jpg" alt="" />
         </div>
@@ -29,13 +29,13 @@
 </template>
 
 <script>
-import db from '../../db.json'
+import db from "../../db.json"
 
 export default {
   data() {
     return {
-      content: '',
-      heading: '',
+      content: "",
+      heading: "",
     }
   },
   async created() {
@@ -47,12 +47,22 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/_config.scss';
+@import "../styles/_config.scss";
 
 .about-me {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__header-container {
+    position: relative;
+    margin-bottom: 30px;
+
     .about-me--heading {
-      text-align: center;
+      margin-bottom: 0;
     }
   }
 
@@ -61,7 +71,6 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 0 10%;
 
     // Tablet and below
     @media (max-width: 768px) {
@@ -101,7 +110,7 @@ export default {
     }
 
     .about-me--content {
-      font-size: clamp(1.4rem, 5vw, 2.8rem);
+      font-size: clamp(1.4rem, 3vw, 2.8rem);
       font-family: $secondary-font;
     }
   }

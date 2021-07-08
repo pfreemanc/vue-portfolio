@@ -71,6 +71,7 @@ export default {
       font-size: clamp(3.8rem, 8vw, 9.6rem);
       margin: 0;
       font-weight: 500;
+      text-shadow: 3px 5px rgb(119, 77, 153);
     }
 
     h2 {

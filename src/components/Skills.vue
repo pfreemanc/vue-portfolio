@@ -4,6 +4,7 @@
       <div class="skills__heading-container">
         <h2 class="skills--heading section--heading">Skills</h2>
       </div>
+
       <ul class="skills__container container">
         <li v-for="(skill, index) in skills" :key="index" class="skill">
           <div class="skill__image-container">
@@ -12,6 +13,7 @@
         </li>
       </ul>
     </div>
+
     <div class="svg--container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -29,16 +31,13 @@
 </template>
 
 <script>
-import db from "../../db.json"
-
 export default {
-  data() {
-    return {
-      skills: [],
-    }
-  },
-  mounted() {
-    this.skills = db.skills
+  name: "Skills",
+  props: {
+    skills: {
+      type: Array,
+      required: true,
+    },
   },
 }
 </script>

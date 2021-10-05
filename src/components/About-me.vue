@@ -4,20 +4,22 @@
       <div class="about-me__header-container">
         <h2 class="about-me--heading section--heading">About Me</h2>
       </div>
+
       <div class="about-me__content container">
         <div class="about-me__image-container">
           <img src="../assets/meagain.jpg" alt="" />
         </div>
         <div class="about-me__text-container">
-          <h3 class="about-me--heading">
-            {{ heading }}
+          <h3 class="about-me--heading" v-if="aboutInfo.heading">
+            {{ aboutInfo.heading }}
           </h3>
-          <p class="about-me--content">
-            {{ content }}
+          <p class="about-me--content" v-if="aboutInfo.content">
+            {{ aboutInfo.content }}
           </p>
         </div>
       </div>
     </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
       <path
         fill="#000000"
@@ -29,19 +31,13 @@
 </template>
 
 <script>
-import db from "../../db.json"
-
 export default {
-  data() {
-    return {
-      content: "",
-      heading: "",
-    }
-  },
-  async created() {
-    const aboutMe = await db.personalInfo.about
-    this.content = aboutMe.content
-    this.heading = aboutMe.heading
+  name: "AboutMe",
+  props: {
+    aboutInfo: {
+      type: Object,
+      required: true,
+    },
   },
 }
 </script>

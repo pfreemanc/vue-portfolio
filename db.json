@@ -7,8 +7,8 @@
     "firstName": "Paige",
     "lastName": "Freeman-Cyopeck"
   },
-  "projects": {
-    "project1": {
+  "projects": [
+    {
       "content": "The experience of walking through a movie hallway and taking time to view all the posters brought to life in a digital format. Take a nostalgic trip through decades past of movie releases and find your next movie to watch.",
       "links": {
         "githubLink": "github.com",
@@ -17,7 +17,7 @@
       "stack": "React | RESTful API | CSS3",
       "title": "Theater Experience"
     },
-    "project2": {
+    {
       "content": "Collaborative client design driven prototype for a navigable podcatcher. Find podcasts based on topic and listening length and build your own podcast playlists catered to your interests!",
       "links": {
         "githubLink": "github.com",
@@ -26,7 +26,7 @@
       "stack": "React | Firebase | CSS3 | RESTful API",
       "title": "Podcast Planner"
     },
-    "project3": {
+    {
       "content": "Paired programming collaborative prototype with Sarah Duong. Using the Pokémon API to provide a tool for players to find information on their favourite Pokémon and their corresponding Pokédex entry!",
       "links": {
         "githubLink": "github.com",
@@ -35,55 +35,55 @@
       "stack": "jQuery | JavaScript | RESTful API | SASS | HTML5",
       "title": "Pokémon Generator"
     }
-  },
-  "skills": {
-    "skill": {
+  ],
+  "skills": [
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "HTML5"
     },
-    "skill1": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "CSS3"
     },
-    "skill2": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "JavaScript"
     },
-    "skill3": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "React"
     },
-    "skill4": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Sass"
     },
-    "skill5": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "jQuery"
     },
-    "skill6": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "GitHub"
     },
-    "skill7": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Slack"
     },
-    "skill8": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Trello"
     },
-    "skill9": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Git"
     },
-    "skill10": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "GitLab"
     },
-    "skill11": {
+    {
       "imgSrc": "http://via.placeholder.com/200x200",
       "title": "Responsive Design"
     }
-  }
+  ]
 }

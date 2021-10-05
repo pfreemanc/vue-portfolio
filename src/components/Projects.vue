@@ -1,14 +1,16 @@
 <template>
-  <div class="projects">
+  <div class="projects" v-if="projects">
     <div class="projects__wrapper wrapper">
       <div class="projects__heading-container">
         <h3 class="projects--heading section--heading">Projects</h3>
       </div>
-      <ul class="projects__container container">
+
+      <ul class="projects__container container" v-if="projects.length > 0">
         <li class="project" v-for="(project, index) in projects" :key="index">
           <div class="project__img-container">
             <img src="https://via.placeholder.com/450x300" alt="" />
           </div>
+
           <div class="project__text-container">
             <h4 class="project--title">{{ project.title }}</h4>
             <h5 class="project--stack">
@@ -29,6 +31,7 @@
         </li>
       </ul>
     </div>
+
     <div class="svg--container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -46,19 +49,14 @@
 </template>
 
 <script>
-import db from "../../db.json"
-
 export default {
-  data() {
-    return {
-      projects: [],
-    }
+  props: {
+    projects: {
+      type: Array,
+      required: true,
+    },
   },
-  async created() {
-    const projects = db.projects
-
-    this.projects = projects
-  },
+  async created() {},
 }
 </script>
 
@@ -164,30 +162,5 @@ export default {
       }
     }
   }
-}
-
-// Mobile small
-@media (max-width: 320px) {
-}
-// Mobile
-@media (max-width: 375px) {
-}
-// Mobile large
-@media (max-width: 414px) {
-}
-// Tablet and below
-@media (max-width: 768px) {
-}
-// Tablet Large
-@media (max-width: 1024px) {
-}
-// MacBook Pro 13 inch
-@media (max-width: 1280px) {
-}
-// MacBook Pro 15 inch
-@media (max-width: 1440px) {
-}
-// MacBook Pro 16 inch
-@media (min-width: 1792px) {
 }
 </style>
